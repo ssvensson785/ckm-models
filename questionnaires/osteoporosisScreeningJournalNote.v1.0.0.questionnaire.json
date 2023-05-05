@@ -1,0 +1,515 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "osteoporosisScreeningJournalNote",
+  "version": "1.0.0",
+  "title": "CDS Osteoporosis Referral",
+  "subjectType": [
+    "QuestionnaireResponse"
+  ],
+  "item": [
+    {
+      "linkId": "diagnosisCode",
+      "type": "string",
+      "text": "Frakturdiagnoskod",
+      "required": true
+    },
+    {
+      "linkId": "wasTheFractureCausedByLowEnergyForceNote",
+      "type": "choice",
+      "text": "Var frakturen orsakad av lågenergivåld?",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0020",
+            "display": "Ja"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0021",
+            "display": "Nej"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0022",
+            "display": "Okänd"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "riskFactorsGroup",
+      "type": "group",
+      "text": "Riskfaktorer",
+      "item": [
+        {
+          "linkId": "osteoporosisHeredityNote",
+          "type": "choice",
+          "text": "Ärftlighet för osteoporos",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "knownOsteoporosisInParentsNote",
+          "type": "string",
+          "text": "Känd osteoporos hos föräldrar",
+          "required": false
+        },
+        {
+          "linkId": "hipFractureInParentsNote",
+          "type": "string",
+          "text": "Höftfraktur hos föräldrar",
+          "required": false
+        },
+        {
+          "linkId": "vertebralCompressionInParentsNote",
+          "type": "string",
+          "text": "Kotkompression hos föräldrar",
+          "required": false
+        },
+        {
+          "linkId": "otherNote",
+          "type": "string",
+          "text": "Annat",
+          "required": false
+        },
+        {
+          "linkId": "smokingNote",
+          "type": "choice",
+          "text": "Rökning",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0023",
+                "display": "Ja, pågående rökning"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0024",
+                "display": "Ja, tidigare rökning"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ongoingCortisoneTreatmentNote",
+          "type": "choice",
+          "text": "Pågående kortisonbehandlingar",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "previousCortisoneTreatmentNote",
+          "type": "choice",
+          "text": "Tidigare kortisonbehandlingar",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "rheumatoidArthritisNote",
+          "type": "choice",
+          "text": "Reumatoid artrit",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "otherDiseaseDrugTreatmentWithKnownBoneAdverseEffectsNote",
+          "type": "choice",
+          "text": "Annan sjukdom eller läkemedelsbehandling med känd bennegativ påverkan",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "homeConditionLevelOfFunctioningNote",
+          "type": "choice",
+          "text": "Hemsituation/funktionsnivå",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0025",
+                "display": "Eget boende"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0026",
+                "display": "Särskilt boende"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "treatment",
+      "type": "group",
+      "text": "Behandling",
+      "item": [
+        {
+          "linkId": "ongoingOsteoporosisProphylaxisNote",
+          "type": "choice",
+          "text": "Pågående osteoporosprofylax",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "ongoingCalciumAndVitaminDSupplementsNote",
+          "type": "choice",
+          "text": "Pågående kalcium och D-vitamin substitution",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0020",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0021",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0022",
+                "display": "Okänd"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "results",
+      "type": "group",
+      "text": "Resultat",
+      "item": [
+        {
+          "linkId": "result",
+          "type": "choice",
+          "text": "Bedömning",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Mer information behövs"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0005",
+                "display": "Hög misstanke om osteoporos"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0006",
+                "display": "Låg misstanke om osteoporos"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "referralNote",
+          "type": "choice",
+          "text": "Remiss",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0009",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0010",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0011",
+                "display": "Skjut upp beslutet"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "reasonForNoReferralNote",
+          "type": "choice",
+          "text": "Orsak till ingen remiss",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0013",
+                "display": "Patienten vill ej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0014",
+                "display": "Patienten bedöms ha adekvat behandling"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0015",
+                "display": "Bedöms inte medicinskt indicerat"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0016",
+                "display": "Annat skäl"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "reasonForNoReferralSpecifyNote",
+          "type": "string",
+          "text": "Orsak till ingen remiss, specificera",
+          "required": false
+        },
+        {
+          "linkId": "referralDelayedNote",
+          "type": "integer",
+          "text": "Beslutet uppskjutet",
+          "required": false,
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "reasonForPostponingNote",
+          "type": "choice",
+          "text": "Orsak till uppskjutet beslut",
+          "required": false,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0024",
+                "display": "Patientrelaterat"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0025",
+                "display": "Remiss till annan vårdenhet"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0016",
+                "display": "Annat skäl"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "reasonForPostponingSpecifyNote",
+          "type": "string",
+          "text": "Orsak till uppskjutet beslut, specificera",
+          "required": false
+        },
+        {
+          "linkId": "commentNote",
+          "type": "string",
+          "text": "Övriga kommentarer",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

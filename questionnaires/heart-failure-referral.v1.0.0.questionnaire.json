@@ -1,0 +1,256 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "heart-failure-referral",
+  "version": "1.0.0",
+  "identifier": [{
+    "type": {
+      "text": "svfHeartFailure-journalNote"
+    }
+  }],
+  "title": "CDS Heart Failure",
+  "subjectType": [
+    "QuestionnaireResponse"
+  ],
+  "item": [
+    {
+      "linkId": "doesThePatientHaveHeartFailureInPalliativeCare",
+      "type": "choice",
+      "text": "Har patienten hjärtsvikt i palliativt skede?",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0003",
+            "display": "Ja"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0004",
+            "display": "Nej"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "investigation",
+      "type": "group",
+      "text": "Undersökning",
+      "item": [
+        {
+          "linkId": "ejectionFractionLessThan40Percent",
+          "type": "choice",
+          "text": "Ejektionsfraktion (EF) < 40 %",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0003",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Nej"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "nYHAClassIIIV",
+          "type": "choice",
+          "text": "NYHA klass II-IV",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0003",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Nej"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "sinusRythm",
+          "type": "choice",
+          "text": "Sinusrytm",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0003",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Nej"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "atrialFibrillation",
+          "type": "choice",
+          "text": "Förmaksflimmer",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0003",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Nej"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "qRSWidthEqualOrGreaterThan130Ms",
+          "type": "choice",
+          "text": "QRS bredd >= 130 ms",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0003",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Nej"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "result",
+      "type": "group",
+      "text": "Resultat",
+      "item": [
+        {
+          "linkId": "recommendations",
+          "type": "string",
+          "text": "Rekommendationer",
+          "required": true
+        },
+        {
+          "linkId": "doYouWantToSendAReferralToAHeartFailureClinicForAssessmentOfAppropriateTreatment",
+          "type": "choice",
+          "text": "Vill du skicka en remiss till hjärtsviktsmottagning för bedömning om lämplig behandling?",
+          "required": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0003",
+                "display": "Ja"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0004",
+                "display": "Nej"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0005",
+                "display": "Skjut upp beslutet"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "decisionDelayed",
+          "type": "integer",
+          "text": "Beslutet uppskjutet",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "reasonForPostponedDecision",
+          "type": "choice",
+          "text": "Orsak till uppskjutet beslut",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0011",
+                "display": "Patientrelaterat"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0012",
+                "display": "Undersökning behövs"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0013",
+                "display": "Remiss till annan vårdenhet"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "local",
+                "code": "at0014",
+                "display": "Annan orsak"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "pleaseSpecifyTheReason",
+          "type": "string",
+          "text": "Specificera orsak"
+        },
+        {
+          "linkId": "additionalInformation",
+          "type": "string",
+          "text": "Kompletterande information"
+        }
+      ]
+    }
+  ]
+}

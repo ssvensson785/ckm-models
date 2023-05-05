@@ -1,0 +1,684 @@
+{
+      "resourceType": "Questionnaire",
+      "id": "acuteHeadInjuryJournalNote",
+      "version": "1.2.3",
+      "title": "CDS Akut Skallskada",
+      "subjectType": [
+        "QuestionnaireResponse"
+      ],
+      "item": [
+        {
+          "linkId": "gcs-assessment",
+          "type": "group",
+          "text": "GCS bedömning",
+          "item": [
+            {
+              "linkId": "eye-response",
+              "type": "choice",
+              "text": "Ögonöppning (E)",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0010",
+                    "display": "Ingen ögonöppning vid smärtstimulering",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 1.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0011",
+                    "display": "Ögonen öppnas efter smärtstimulering",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 2.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0012",
+                    "display": "Ögonen öppnas vid tilltal",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 3.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0013",
+                    "display": "Ögonen hålls spontant öppna",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 4.0
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "best-verbal-response",
+              "type": "choice",
+              "text": "Svar på tilltal (V)",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0014",
+                    "display": "Ingen reaktion på tilltal",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 1.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0015",
+                    "display": "Reagerar på tilltal med oartikulerat ljud",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 2.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0016",
+                    "display": "Reagerar på tilltal med enstaka ord",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 3.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0017",
+                    "display": "Desorienterad/konfusorisk",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 4.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0018",
+                    "display": "Fullt orienterad",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 5.0
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "best-motor-response",
+              "type": "choice",
+              "text": "Motorisk reaktion (M)",
+              "required": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0019",
+                    "display": "Ingen reaktion vid smärtstimulering",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 1.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0020",
+                    "display": "Extension i armbågen vid smärtstimulering",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 2.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0021",
+                    "display": "Flexion i armbågen vid smärtstimulering",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 3.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0022",
+                    "display": "Drar undan armen vid smärtstimulering av fingernagelbädd",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 4.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0023",
+                    "display": "Lokaliserar smärta",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 5.0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "local",
+                    "code": "at0024",
+                    "display": "Lyder uppmaning adekvat",
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                        "valueDecimal": 6.0
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "gcs-score",
+              "type": "integer",
+              "text": "GCS total poäng",
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "head-injury-assessment",
+          "type": "group",
+          "text": "Bedömning av skallskada",
+          "item": [
+            {
+              "linkId": "mechanism-of-injury",
+              "type": "string",
+              "text": "Aktuellt",
+              "required": true
+            },
+            {
+              "linkId": "anamnesis",
+              "type": "group",
+              "text": "Tid och symptom",
+              "item": [
+                {
+                  "linkId": "estimated-time-of-injury",
+                  "type": "choice",
+                  "text": "Uppskattad tid sedan skada",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0034",
+                        "display": "Mindre än 6 tim."
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0035",
+                        "display": "6-24 tim."
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0036",
+                        "display": "Efter 24 tim."
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "loss-of-consciousness",
+                  "type": "choice",
+                  "text": "Medvetslöshet (misstänkt)",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "repeated-vomiting",
+                  "type": "choice",
+                  "text": "Kräkningar (två eller fler)",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "posttraumatic-seizures",
+                  "type": "choice",
+                  "text": "Krampanfall efteråt",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "linkId": "medical-history",
+              "type": "group",
+              "text": "Sjukdomshistoria",
+              "item": [
+                {
+                  "linkId": "antiplatelet-medication",
+                  "type": "choice",
+                  "text": "Tar trombocythämmande läkemedel",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "anticoagulation-therapy",
+                  "type": "choice",
+                  "text": "Tar antikoagulantia/har koagulationsrubbning",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "shunt-treated-hydrocephalus",
+                  "type": "choice",
+                  "text": "Hydrocefalus med shunt",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "linkId": "examination-findings",
+              "type": "group",
+              "text": "Statusundersökning",
+              "item": [
+                {
+                  "linkId": "depressed-skull-fracture",
+                  "type": "choice",
+                  "text": "Tecken på skallfraktur",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "focal-neurological-deficits",
+                  "type": "choice",
+                  "text": "Neurologiska bortfall/retningstillstånd",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "linkId": "additional-findings",
+              "type": "string",
+              "text": "Ytterligare status",
+              "required": true
+            },
+            {
+              "linkId": "result",
+              "type": "group",
+              "text": "Resultat",
+              "item": [
+                {
+                  "linkId": "head-injury-level",
+                  "type": "choice",
+                  "text": "Skada nivå",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0018",
+                        "display": "Minimal"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0019",
+                        "display": "Lätt"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0020",
+                        "display": "Medelsvår"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "risk-level",
+                  "type": "choice",
+                  "text": "Risk nivå",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0022",
+                        "display": "Låg"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0023",
+                        "display": "Måttlig"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0024",
+                        "display": "Hög"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "recommendation",
+                  "type": "choice",
+                  "text": "Rekommendation",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0027",
+                        "display": "Datortomografi (DT) undersökning"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0028",
+                        "display": "S100B analys"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0029",
+                        "display": "Inläggning på sjukhus"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0030",
+                        "display": "Utskrivning från sjukhus"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0055",
+                        "display": "Observation ≥ 12 timmar"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0056",
+                        "display": "Observation ≥ 6 timmar"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "follow-recommendation",
+                  "type": "choice",
+                  "text": "Följ rekommendation",
+                  "required": true,
+                  "answerOption": [
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0060",
+                        "display": "Ja"
+                      }
+                    },
+                    {
+                      "valueCoding": {
+                        "system": "local",
+                        "code": "at0061",
+                        "display": "Nej"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "linkId": "clinician-notes",
+                  "type": "string",
+                  "text": "Kommentar till bedömning"
+                },
+                {
+                  "linkId": "reason-for-deviating",
+                  "type": "string",
+                  "text": "Orsak till avsteg"
+                },
+                {
+                  "linkId": "serviceRequest-deviation",
+                  "type": "group",
+                  "text": "Beställning utöver rekommendation",
+                  "item": [
+                    {
+                      "linkId": "ct-order",
+                      "type": "choice",
+                      "text": "Beställ DT",
+                      "answerOption": [
+                        {
+                          "valueCoding": {
+                            "system": "local",
+                            "code": "at0060",
+                            "display": "Ja"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "system": "local",
+                            "code": "at0061",
+                            "display": "Nej"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "s100b-order",
+                      "type": "choice",
+                      "text": "Beställ S100B",
+                      "answerOption": [
+                        {
+                          "valueCoding": {
+                            "system": "local",
+                            "code": "at0060",
+                            "display": "Ja"
+                          }
+                        },
+                        {
+                          "valueCoding": {
+                            "system": "local",
+                            "code": "at0061",
+                            "display": "Nej"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }

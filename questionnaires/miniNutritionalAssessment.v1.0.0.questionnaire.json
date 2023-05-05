@@ -1,0 +1,353 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "miniNutritionalAssessment",
+  "version": "1.0.0",
+  "identifier": [
+    {
+    "type": {
+        "text": "mini-nutritional-assessment"
+      }
+    }
+  ],
+  "title": "Mini Nutrional Assessment",
+  "subjectType": [
+    "QuestionnaireResponse"
+  ],
+  "item": [
+    {
+      "linkId": "foodIntake",
+      "type": "choice",
+      "text": "Has food intake declined over the past 3 months due to loss of appetite, digestive problems, chewing or  swallowing difficulties?",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0005",
+            "display": "Severe decrease in food intake",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0006",
+            "display": "Moderate decrease in food intake",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0007",
+            "display": "No decrease in food intake",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "weightLoss",
+      "type": "choice",
+      "text": "Weight loss during the last 3 months",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0009",
+            "display": "Weight loss greater than 3 kg (6.6 lbs)",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0010",
+            "display": "Does not know",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0011",
+            "display": "Weight loss between 1 and 3 kg (2.2 and 6.6 lbs)",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0012",
+            "display": "No weight loss",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "mobility",
+      "type": "choice",
+      "text": "Mobility",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0014",
+            "display": "Bed or chair bound",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0015",
+            "display": "Able to get out/chair but does not got out",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0016",
+            "display": "Goes out",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "psychologicalStress",
+      "type": "choice",
+      "text": "Has suffered psychological stress or acute disease in the past 3 months?",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0018",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0019",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "neuropsychologicalProblems",
+      "type": "choice",
+      "text": "Neuropsychological problems",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0021",
+            "display": "Severe dementia or depression",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0022",
+            "display": "Mild dementia",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0023",
+            "display": "No psychological problems",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "bodyMassIndex",
+      "type": "choice",
+      "text": "Body Mass Index (BMI)",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0025",
+            "display": "BMI less than 19",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0026",
+            "display": "BMI 19 to less than 21",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 1.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0027",
+            "display": "BMI 21 to less than 23",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 2.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0028",
+            "display": "BMI 23 or greater",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "calfCircumference",
+      "type": "choice",
+      "text": "Calf circumference (CC) in cm",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0030",
+            "display": "CC less than 31",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 0.0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "local",
+            "code": "at0031",
+            "display": "CC 31 or greater",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-CO-value",
+                "valueDecimal": 3.0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "totalScore",
+      "type": "integer",
+      "text": "Total score",
+      "required": true
+    }
+  ]
+}
